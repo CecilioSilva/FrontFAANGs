@@ -16,12 +16,27 @@
                 <div id="nav-items">
                     <div id="nav-item">
                         <a href="#">
-                            <img src="../images/fakebook/fakelook-logo.svg" alt="fakebook-logo" id="nav-logo" />
+                            <img
+                                src="../images/fakebook/navigation/fakelook-logo.svg"
+                                alt="fakebook-logo"
+                                id="nav-logo"
+                            />
                         </a>
+                        <button id="search-box-small">
+                            <img
+                                src="../images/fakebook/navigation/looking-glass.svg"
+                                id="search-icon"
+                                alt="messenger"
+                            />
+                        </button>
                     </div>
                     <div id="nav-item">
                         <div id="search-box">
-                            <img src="../images/fakebook/looking-glass.svg" id="search-icon" alt="messenger" />
+                            <img
+                                src="../images/fakebook/navigation/looking-glass.svg"
+                                id="search-icon"
+                                alt="messenger"
+                            />
                             <input id="search-input" type="text" placeholder="Search Fakelook" />
                         </div>
                     </div>
@@ -30,12 +45,20 @@
                             <div id="nav-option">
                                 <button id="rounded-btn">
                                     <span id="btn-badge">8</span>
-                                    <img src="../images/fakebook/messenger.svg" id="btn-icon" alt="messenger" />
+                                    <img
+                                        src="../images/fakebook/navigation/messenger.svg"
+                                        id="btn-icon"
+                                        alt="messenger"
+                                    />
                                 </button>
                             </div>
                             <div id="nav-option">
                                 <button id="rounded-btn">
-                                    <img src="../images/fakebook/bell.svg" id="btn-icon" alt="notification" />
+                                    <img
+                                        src="../images/fakebook/navigation/bell.svg"
+                                        id="btn-icon"
+                                        alt="notification"
+                                    />
                                 </button>
                             </div>
                             <div id="nav-option">
@@ -49,75 +72,181 @@
             </nav>
         </header>
         <div id="container">
-            <aside id="left-sidebar-bar">
+            <aside id="left-sidebar">
                 <ul id="left-sidebar-items">
-                    <li id="sidebar-item">
-                        <a href="#"><span id="item-icon">🏠</span><span id="item-title">Home</span></a>
-                    </li>
-                    <li id="sidebar-item">
-                        <a href="#"><span id="item-icon">👦🏾</span><span id="item-title">Username</span></a>
-                    </li>
-
                     <div id="sidebar-item-group">
-                        <li id="sidebar-item">
-                            <a href="#"><span class="item-icon">📃</span><span id="item-head-title">Menu</span></a>
-                        </li>
-                        <li id="sidebar-item">
-                            <a href="#"><span class="item-icon">📃</span><span id="item-title">Watch</span></a>
-                        </li>
-                        <li id="sidebar-item">
-                            <a href="#"><span class="item-icon">📃</span><span id="item-title">Friends</span></a>
-                        </li>
-                        <li id="sidebar-item">
-                            <a href="#"><span class="item-icon">📃</span><span id="item-title">Marketplace</span></a>
-                        </li>
-                        <li id="sidebar-item">
-                            <a href="#"><span class="item-icon">📃</span><span id="item-title">Gaming</span></a>
-                        </li>
+                        <a href="#">
+                            <li id="sidebar-item">
+                                <span class="selected"></span>
+                                <img id="item-icon" src="../images/fakebook/home.png" alt="home" />
+                                <span id="item-title">Home</span>
+                            </li>
+                        </a>
+
+                        <a href="#">
+                            <li id="sidebar-item">
+                                <img
+                                    id="item-icon"
+                                    src="../images/fakebook/profile.png"
+                                    class="rounded-full"
+                                    alt="profile"
+                                />
+                                <span id="item-title">Username</span>
+                            </li>
+                        </a>
                     </div>
 
                     <div id="sidebar-item-group">
-                        <li id="sidebar-item">
-                            <a href="#"><span class="item-icon">🧑‍🤝‍🧑</span><span id="item-head-title">Groups</span></a>
-                        </li>
-                        <li id="sidebar-item">
-                            <a href="#"><span class="item-icon">🧑‍🤝‍🧑</span><span id="item-title">Best Friends</span></a>
-                        </li>
-                        <li id="sidebar-item">
-                            <a href="#"><span class="item-icon">🧑‍🤝‍🧑</span><span id="item-title">Webdev NL</span></a>
-                        </li>
-                        <li id="sidebar-item">
-                            <a href="#"><span class="item-icon">🧑‍🤝‍🧑</span><span id="item-title">Hobbists</span></a>
-                        </li>
+                        <a href="#">
+                            <li id="sidebar-item-head">
+                                <span id="item-icon">
+                                    <img id="item-icon-inside" src="../images/fakebook/menu/menu.svg" alt="menu" />
+                                </span>
+                                <span id="item-head-title">Menu</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li id="sidebar-item">
+                                <img id="item-icon" src="../images/fakebook/menu/watch.png" alt="watch" />
+                                <span id="item-title">Watch</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li id="sidebar-item">
+                                <img id="item-icon" src="../images/fakebook/menu/friends.png" alt="friends" />
+                                <span id="item-title">Friends</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li id="sidebar-item">
+                                <img id="item-icon" src="../images/fakebook/menu/marketplace.png" alt="marketplace" />
+                                <span id="item-title">Marketplace</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li id="sidebar-item">
+                                <img id="item-icon" src="../images/fakebook/menu/gaming.png" alt="gaming" />
+                                <span id="item-title">Gaming</span>
+                            </li>
+                        </a>
                     </div>
 
                     <div id="sidebar-item-group">
-                        <li id="sidebar-item">
-                            <a href="#"><span class="item-icon">🔗</span><span id="item-head-title">Shortcuts</span></a>
-                        </li>
-                        <li id="sidebar-item">
-                            <a href="#">
-                                <span class="item-icon">🔗</span><span id="item-title">Angry Birds Friends</span>
-                            </a>
-                        </li>
-                        <li id="sidebar-item">
-                            <a href="#">
-                                <span class="item-icon">🔗</span><span id="item-title">Bejeweled Blitz</span>
-                            </a>
-                        </li>
-                        <li id="sidebar-item">
-                            <a href="#">
-                                <span class="item-icon">🔗</span><span id="item-title">Candy Crush Saga</span>
-                            </a>
-                        </li>
-                        <li id="sidebar-item">
-                            <a href="#"> <span class="item-icon">🔗</span><span id="item-title">Agar.io</span> </a>
-                        </li>
-                        <li id="sidebar-item">
-                            <a href="#">
-                                <span class="item-icon">🔗</span><span id="item-title">Cookie Clickers</span>
-                            </a>
-                        </li>
+                        <a href="#">
+                            <li id="sidebar-item-head">
+                                <span id="item-icon">
+                                    <img
+                                        id="item-icon-inside"
+                                        src="../images/fakebook/groups/groups.png"
+                                        alt="groups"
+                                    />
+                                </span>
+                                <span id="item-head-title">Groups</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li id="sidebar-item">
+                                <img
+                                    class="rounded-semi"
+                                    id="item-icon"
+                                    src="../images/fakebook/groups/group-icon.jpg"
+                                    alt="group-1"
+                                />
+                                <span id="item-title">Best Friends</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li id="sidebar-item">
+                                <img
+                                    class="rounded-semi"
+                                    id="item-icon"
+                                    src="../images/fakebook/groups/group-icon.jpg"
+                                    alt="group-2"
+                                />
+                                <span id="item-title">Webdev NL</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li id="sidebar-item">
+                                <img
+                                    class="rounded-semi"
+                                    id="item-icon"
+                                    src="../images/fakebook/groups/group-icon.jpg"
+                                    alt="group-3"
+                                />
+                                <span id="item-title">Hobbists</span>
+                            </li>
+                        </a>
+                    </div>
+
+                    <div id="sidebar-item-group">
+                        <a href="#">
+                            <li id="sidebar-item-head">
+                                <span id="item-icon">
+                                    <img
+                                        id="item-icon-inside"
+                                        src="../images/fakebook/shortcuts/shortcuts.png"
+                                        alt="shortcuts"
+                                    />
+                                </span>
+                                <span id="item-head-title">Shortcuts</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li id="sidebar-item">
+                                <img
+                                    class="rounded-semi"
+                                    id="item-icon"
+                                    src="../images/fakebook/shortcuts/angry-fish-friends.png"
+                                    alt="group-1"
+                                />
+                                <span id="item-title">Angry Fish Friends</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li id="sidebar-item">
+                                <img
+                                    class="rounded-semi"
+                                    id="item-icon"
+                                    src="../images/fakebook/shortcuts/berocked-blitz.png"
+                                    alt="group-1"
+                                />
+                                <span id="item-title">Berocked Blitz</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li id="sidebar-item">
+                                <img
+                                    class="rounded-semi"
+                                    id="item-icon"
+                                    src="../images/fakebook/shortcuts/vegetable-crush.png"
+                                    alt="group-1"
+                                />
+                                <span id="item-title">Vegetable Crush Saga</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li id="sidebar-item">
+                                <img
+                                    class="rounded-semi"
+                                    id="item-icon"
+                                    src="../images/fakebook/shortcuts/gelatin.io.png"
+                                    alt="group-1"
+                                />
+                                <span id="item-title">Gelatin.io</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li id="sidebar-item">
+                                <img
+                                    class="rounded-semi"
+                                    id="item-icon"
+                                    src="../images/fakebook/shortcuts/cracker.png"
+                                    alt="group-1"
+                                />
+                                <span id="item-title">Cracker Clickers</span>
+                            </li>
+                        </a>
                     </div>
                 </ul>
             </aside>
@@ -257,7 +386,7 @@
                 </div>
             </section>
 
-            <aside id="right-side-bar">
+            <aside id="right-sidebar">
                 <ul id="right-sidebar-items">
                     <div id="sidebar-item-group">
                         <li id="sidebar-head-title">
