@@ -274,7 +274,7 @@ a {
     top: 70px;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 760px) {
     #left-sidebar {
         border-right: 2px solid var(--secondary-color);
         background-color: var(--nav-bar-background);
@@ -299,7 +299,7 @@ a {
     }
 }
 
-@media screen and (min-width: 560px) {
+@media screen and (min-width: 760px) {
     #left-sidebar {
         width: 300px;
     }
@@ -323,7 +323,32 @@ a {
 
 /* Right sidebar */
 #right-sidebar {
-    display: none;
+    position: fixed;
+    width: 190px;
+    right: 0px;
+    top: 50px;
+    margin-right: 40px;
+}
+
+ul#right-sidebar {
+    padding: 0;
+    margin: 0;
+}
+
+#right-sidebar #sidebar-item{
+    margin-left: 0px;
+    width: 100%;
+    font-size: 14px;
+}
+
+#right-sidebar li {
+    list-style: none;
+}
+
+@media screen and (max-width: 560px) {
+    #right-sidebar{
+        display: none;
+    }
 }
 
 /* Stories */

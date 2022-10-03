@@ -1,476 +1,560 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../styles/global.css" />
-        <script src="../javascript/index.js" defer></script>
-        <link rel="stylesheet" href="../styles/fakelook.css" />
-        <script src="../javascript/fakelook.js" defer></script>
-        <title>Fakelook</title>
-    </head>
-    <body>
-        <header>
-            <nav id="nav-bar">
-                <div id="nav-items">
-                    <div id="nav-item">
-                        <a href="#">
-                            <img
-                                src="../images/fakebook/navigation/fakelook-logo.svg"
-                                alt="fakebook-logo"
-                                id="nav-logo"
-                            />
-                        </a>
-                        <button id="search-box-small">
-                            <img
-                                src="../images/fakebook/navigation/looking-glass.svg"
-                                id="search-icon"
-                                alt="messenger"
-                            />
-                        </button>
-                    </div>
-                    <div id="nav-item">
-                        <div id="search-box">
-                            <img
-                                src="../images/fakebook/navigation/looking-glass.svg"
-                                id="search-icon"
-                                alt="messenger"
-                            />
-                            <input id="search-input" type="text" placeholder="Search Fakelook" />
-                        </div>
-                    </div>
-                    <div id="nav-item">
-                        <div id="nav-options">
-                            <div id="nav-option">
-                                <button id="rounded-btn">
-                                    <span id="btn-badge">8</span>
-                                    <img
-                                        src="../images/fakebook/navigation/messenger.svg"
-                                        id="btn-icon"
-                                        alt="messenger"
-                                    />
-                                </button>
-                            </div>
-                            <div id="nav-option">
-                                <button id="rounded-btn">
-                                    <img
-                                        src="../images/fakebook/navigation/bell.svg"
-                                        id="btn-icon"
-                                        alt="notification"
-                                    />
-                                </button>
-                            </div>
-                            <div id="nav-option">
-                                <button id="rounded-btn">
-                                    <img src="../images/fakebook/profile.png" id="btn-image" alt="profile" />
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <div id="container">
-            <aside id="left-sidebar">
-                <ul id="left-sidebar-items">
-                    <div id="sidebar-item-group">
-                        <a href="#">
-                            <li id="sidebar-item">
-                                <span class="selected"></span>
-                                <img id="item-icon" src="../images/fakebook/home.png" alt="home" />
-                                <span id="item-title">Home</span>
-                            </li>
-                        </a>
-
-                        <a href="#">
-                            <li id="sidebar-item">
-                                <img
-                                    id="item-icon"
-                                    src="../images/fakebook/profile.png"
-                                    class="rounded-full"
-                                    alt="profile"
-                                />
-                                <span id="item-title">Username</span>
-                            </li>
-                        </a>
-                    </div>
-
-                    <div id="sidebar-item-group">
-                        <a href="#">
-                            <li id="sidebar-item-head">
-                                <span id="item-icon">
-                                    <img id="item-icon-inside" src="../images/fakebook/menu/menu.svg" alt="menu" />
-                                </span>
-                                <span id="item-head-title">Menu</span>
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li id="sidebar-item">
-                                <img id="item-icon" src="../images/fakebook/menu/watch.png" alt="watch" />
-                                <span id="item-title">Watch</span>
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li id="sidebar-item">
-                                <img id="item-icon" src="../images/fakebook/menu/friends.png" alt="friends" />
-                                <span id="item-title">Friends</span>
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li id="sidebar-item">
-                                <img id="item-icon" src="../images/fakebook/menu/marketplace.png" alt="marketplace" />
-                                <span id="item-title">Marketplace</span>
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li id="sidebar-item">
-                                <img id="item-icon" src="../images/fakebook/menu/gaming.png" alt="gaming" />
-                                <span id="item-title">Gaming</span>
-                            </li>
-                        </a>
-                    </div>
-
-                    <div id="sidebar-item-group">
-                        <a href="#">
-                            <li id="sidebar-item-head">
-                                <span id="item-icon">
-                                    <img
-                                        id="item-icon-inside"
-                                        src="../images/fakebook/groups/groups.png"
-                                        alt="groups"
-                                    />
-                                </span>
-                                <span id="item-head-title">Groups</span>
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li id="sidebar-item">
-                                <img
-                                    class="rounded-semi"
-                                    id="item-icon"
-                                    src="../images/fakebook/groups/group-icon.jpg"
-                                    alt="group-1"
-                                />
-                                <span id="item-title">Best Friends</span>
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li id="sidebar-item">
-                                <img
-                                    class="rounded-semi"
-                                    id="item-icon"
-                                    src="../images/fakebook/groups/group-icon.jpg"
-                                    alt="group-2"
-                                />
-                                <span id="item-title">Webdev NL</span>
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li id="sidebar-item">
-                                <img
-                                    class="rounded-semi"
-                                    id="item-icon"
-                                    src="../images/fakebook/groups/group-icon.jpg"
-                                    alt="group-3"
-                                />
-                                <span id="item-title">Hobbists</span>
-                            </li>
-                        </a>
-                    </div>
-
-                    <div id="sidebar-item-group">
-                        <a href="#">
-                            <li id="sidebar-item-head">
-                                <span id="item-icon">
-                                    <img
-                                        id="item-icon-inside"
-                                        src="../images/fakebook/shortcuts/shortcuts.png"
-                                        alt="shortcuts"
-                                    />
-                                </span>
-                                <span id="item-head-title">Shortcuts</span>
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li id="sidebar-item">
-                                <img
-                                    class="rounded-semi"
-                                    id="item-icon"
-                                    src="../images/fakebook/shortcuts/angry-fish-friends.png"
-                                    alt="group-1"
-                                />
-                                <span id="item-title">Angry Fish Friends</span>
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li id="sidebar-item">
-                                <img
-                                    class="rounded-semi"
-                                    id="item-icon"
-                                    src="../images/fakebook/shortcuts/berocked-blitz.png"
-                                    alt="group-1"
-                                />
-                                <span id="item-title">Berocked Blitz</span>
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li id="sidebar-item">
-                                <img
-                                    class="rounded-semi"
-                                    id="item-icon"
-                                    src="../images/fakebook/shortcuts/vegetable-crush.png"
-                                    alt="group-1"
-                                />
-                                <span id="item-title">Vegetable Crush Saga</span>
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li id="sidebar-item">
-                                <img
-                                    class="rounded-semi"
-                                    id="item-icon"
-                                    src="../images/fakebook/shortcuts/gelatin.io.png"
-                                    alt="group-1"
-                                />
-                                <span id="item-title">Gelatin.io</span>
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li id="sidebar-item">
-                                <img
-                                    class="rounded-semi"
-                                    id="item-icon"
-                                    src="../images/fakebook/shortcuts/cracker.png"
-                                    alt="group-1"
-                                />
-                                <span id="item-title">Cracker Clickers</span>
-                            </li>
-                        </a>
-                    </div>
-                </ul>
-            </aside>
-
-            <section id="main-content">
-                <div id="stories-container">
-                    <article id="add-story">
-                        <img src="" alt="profile-picture" id="story-cover" />
-                        <div id="add-story-footer">
-                            <span>➕</span>
-                            <br />
-                            <span>Create story</span>
-                        </div>
-                    </article>
-                    <a href="#">
-                        <article id="story">
-                            <img src="" alt="story-poster" id="story-profile-picture" />
-                            <img src="" alt="story" id="story-cover" />
-                            <p id="story-poster">Hank Simmons</p>
-                        </article>
-                    </a>
-                    <a href="#">
-                        <article id="story">
-                            <img src="" alt="story" id="story-profile-picture" />
-                            <img src="" alt="story" id="story-cover" />
-                            <p id="story-poster">Derek Hanks</p>
-                        </article>
-                    </a>
-                    <a href="#">
-                        <article id="story">
-                            <img src="" alt="story" id="story-profile-picture" />
-                            <img src="" alt="story" id="story-cover" />
-                            <p id="story-poster">James Bond</p>
-                        </article>
-                    </a>
-                    <a href="#">
-                        <article id="story">
-                            <img src="" alt="story" id="story-profile-picture" />
-                            <img src="" alt="story" id="story-cover" />
-                            <p id="story-poster">Josh Bakker</p>
-                        </article>
-                    </a>
-                    <a href="#">
-                        <article id="story">
-                            <img src="" alt="story" id="story-profile-picture" />
-                            <img src="" alt="story" id="story-cover" />
-                            <p id="story-poster">Peter Booid</p>
-                        </article>
-                    </a>
-                    <button id="more-stories-button">➡️</button>
-                </div>
-                <div id="new-post-container">
-                    <div id="new-post-top">
-                        <a href="#"><img src="" alt="profile-picture" /></a>
-                        <input type="text" placeholder="What's on your mind, User?" />
-                    </div>
-                    <hr />
-                    <div id="new-post-bottom">
-                        <ul id="new-post-options">
-                            <li id="new-post-option">
-                                <a href="#">
-                                    <img src="" alt="live-video-icon" />
-                                    <span id="option-title">Live Video</span>
-                                </a>
-                            </li>
-                            <li id="new-post-option">
-                                <a href="#">
-                                    <img src="" alt="photos-video-icon" />
-                                    <span id="option-title">Photos/video</span>
-                                </a>
-                            </li>
-                            <li id="new-post-option">
-                                <a href="#">
-                                    <img src="" alt="feeling-activity-icon" />
-                                    <span id="option-title">Feeling/activity</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="room-container">
-                    <button id="rounded-btn" aria-label="create-room-button">📷 Create room</button>
-                    <a href="#">
-                        <li id="online-person">
-                            <img src="" alt="online-person-picure" id="online-person-image" />
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li id="online-person">
-                            <img src="" alt="online-person-picure" id="online-person-image" />
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li id="online-person">
-                            <img src="" alt="online-person-picure" id="online-person-image" />
-                        </li>
-                    </a>
-                </div>
-                <div id="posts-container">
-                    <article id="post">
-                        <div id="post-header">
-                            <a href="#"><img src="" alt="post-profile-picture" /></a>
-                            <div id="post-author-date">
-                                <a href="#"><h3 id="post-author">Josh peters</h3></a>
-                                <a href="#" id="post-date">July 30</a><span id="post-visibility">🌍</span>
-                            </div>
-                            <button id="post-options" aria-label="post-options">⚙️</button>
-                        </div>
-                        <div id="post-content">
-                            <img src="" alt="post-image" id="post-content-image" />
-                        </div>
-                        <div id="post-stats">
-                            <div id="reaction-items">
-                                <span id="reaction-item">😆</span>
-                                <span id="reaction-item">👍🏾</span>
-                                <a href="#"><span id="reaction-count">2K</span></a>
-                            </div>
-                            <div id="interaction-items">
-                                <a href="#"><span id="comment-stats">43K Comments</span></a>
-                                <a href="#"><span id="share-stats">156 Shares</span></a>
-                            </div>
-                        </div>
-                        <div id="post-interaction">
-                            <ul id="post-interactions">
-                                <li id="post-button">
-                                    <span id="post-button-icon">👍🏾</span><span id="post-button-text">Like</span>
-                                </li>
-                                <li id="post-button">
-                                    <span id="post-button-icon">💬</span><span id="post-button-text">Comment</span>
-                                </li>
-                                <li id="post-button">
-                                    <span id="post-button-icon">📭</span><span id="post-button-text">Share</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <aside id="right-sidebar">
-                <ul id="right-sidebar-items">
-                    <div id="sidebar-item-group">
-                        <li id="sidebar-head-title">
-                            <h3 id="item-head-title">Sponsored</h3>
-                        </li>
-                        <li id="sidebar-ad-item">
-                            <img src="" alt="ad-image" id="sidebar-ad-image" />
-                            <span id="sidebar-ad-title">Ns</span>
-                            <span id="sidebar-ad-title">werkenbijns.nl</span>
-                        </li>
-                        <li id="sidebar-ad-item">
-                            <img src="" alt="ad-image" id="sidebar-ad-image" />
-                            <span id="sidebar-ad-title">Ns</span>
-                            <span id="sidebar-ad-title">werkenbijns.nl</span>
-                        </li>
-                    </div>
-
-                    <div id="sidebar-item-group">
-                        <li id="sidebar-head-title">
-                            <h3 id="item-head-title">Contacts</h3>
-                        </li>
-                        <li id="sidebar-item">
-                            <a href="#"><span class="item-icon">👴🏻</span><span id="item-title">John Doe</span></a>
-                        </li>
-                        <li id="sidebar-item">
-                            <a href="#"><span class="item-icon">👴🏻</span><span id="item-title">Hanna Baker</span></a>
-                        </li>
-                        <li id="sidebar-item">
-                            <a href="#"><span class="item-icon">👴🏻</span><span id="item-title">Sara Cho</span></a>
-                        </li>
-                        <li id="sidebar-item">
-                            <a href="#"><span class="item-icon">👴🏻</span><span id="item-title">Josh Peters</span></a>
-                        </li>
-                        <li id="sidebar-item">
-                            <a href="#"><span class="item-icon">👴🏻</span><span id="item-title">Derek Thomason</span></a>
-                        </li>
-                    </div>
-
-                    <div id="sidebar-item-group">
-                        <li id="sidebar-head-title">
-                            <h3 id="item-head-title">Group conversations</h3>
-                        </li>
-                        <li id="sidebar-item">
-                            <a href="#">
-                                <span class="item-icon">🤼</span><span id="item-title">Quin, James and 12 others</span>
-                            </a>
-                        </li>
-                        <li id="sidebar-item">
-                            <a href="#">
-                                <span class="item-icon">🤼</span><span id="item-title">Hanna, Josh and 29 others</span>
-                            </a>
-                        </li>
-                        <li id="sidebar-item">
-                            <a href="#">
-                                <span class="item-icon">🤼</span><span id="item-title">Sara and Peter</span>
-                            </a>
-                        </li>
-                        <li id="sidebar-item">
-                            <a href="#">
-                                <span class="item-icon">➕</span><span id="item-title">Create new group</span>
-                            </a>
-                        </li>
-                    </div>
-                </ul>
-            </aside>
-        </div>
-        <footer>
-            <div id="footer-links">
-                <a href="#" id="footer-link">Privacy</a>
-                <span id="footer-link-spacer">·</span>
-                <a href="#" id="footer-link">Terms</a>
-                <span id="footer-link-spacer">·</span>
-                <a href="#" id="footer-link">Advertising</a>
-                <span id="footer-link-spacer">·</span>
-                <a href="#" id="footer-link">Ads</a>
-                <span id="footer-link-spacer">·</span>
-                <a href="#" id="footer-link">Cookies</a>
-                <span id="footer-link-spacer">·</span>
-                <a href="#" id="footer-link">More</a>
-                <span id="footer-link-spacer">·</span>
-                <span id="footer-copyright">Beta &copy; <span id="copyright"></span></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <script src="../javascript/index.js" defer></script>
+    <link rel="stylesheet" href="../styles/fakelook.css" />
+    <script src="../javascript/fakelook.js" defer></script>
+    <title>Fakelook</title>
+  </head>
+  <body>
+    <header>
+      <nav id="nav-bar">
+        <div id="nav-items">
+          <div id="nav-item">
+            <a href="#">
+              <img
+                src="../images/fakebook/navigation/fakelook-logo.svg"
+                alt="fakebook-logo"
+                id="nav-logo"
+              />
+            </a>
+            <button id="search-box-small">
+              <img
+                src="../images/fakebook/navigation/looking-glass.svg"
+                id="search-icon"
+                alt="messenger"
+              />
+            </button>
+          </div>
+          <div id="nav-item">
+            <div id="search-box">
+              <img
+                src="../images/fakebook/navigation/looking-glass.svg"
+                id="search-icon"
+                alt="messenger"
+              />
+              <input
+                id="search-input"
+                type="text"
+                placeholder="Search Fakelook"
+              />
             </div>
+          </div>
+          <div id="nav-item">
+            <div id="nav-options">
+              <div id="nav-option">
+                <button id="rounded-btn">
+                  <span id="btn-badge">8</span>
+                  <img
+                    src="../images/fakebook/navigation/messenger.svg"
+                    id="btn-icon"
+                    alt="messenger"
+                  />
+                </button>
+              </div>
+              <div id="nav-option">
+                <button id="rounded-btn">
+                  <img
+                    src="../images/fakebook/navigation/bell.svg"
+                    id="btn-icon"
+                    alt="notification"
+                  />
+                </button>
+              </div>
+              <div id="nav-option">
+                <button id="rounded-btn">
+                  <img
+                    src="../images/fakebook/profile.png"
+                    id="btn-image"
+                    alt="profile"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="container">
+      <aside id="left-sidebar">
+        <ul id="left-sidebar-items">
+          <div id="sidebar-item-group">
+            <a href="#">
+              <li id="sidebar-item">
+                <span class="selected"></span>
+                <img
+                  id="item-icon"
+                  src="../images/fakebook/home.png"
+                  alt="home"
+                />
+                <span id="item-title">Home</span>
+              </li>
+            </a>
 
-            <button id="rounded-btn" aria-label="new-message">✏️</button>
-        </footer>
-    </body>
+            <a href="#">
+              <li id="sidebar-item">
+                <img
+                  id="item-icon"
+                  src="../images/fakebook/profile.png"
+                  class="rounded-full"
+                  alt="profile"
+                />
+                <span id="item-title">Username</span>
+              </li>
+            </a>
+          </div>
+
+          <div id="sidebar-item-group">
+            <a href="#">
+              <li id="sidebar-item-head">
+                <span id="item-icon">
+                  <img
+                    id="item-icon-inside"
+                    src="../images/fakebook/menu/menu.svg"
+                    alt="menu"
+                  />
+                </span>
+                <span id="item-head-title">Menu</span>
+              </li>
+            </a>
+            <a href="#">
+              <li id="sidebar-item">
+                <img
+                  id="item-icon"
+                  src="../images/fakebook/menu/watch.png"
+                  alt="watch"
+                />
+                <span id="item-title">Watch</span>
+              </li>
+            </a>
+            <a href="#">
+              <li id="sidebar-item">
+                <img
+                  id="item-icon"
+                  src="../images/fakebook/menu/friends.png"
+                  alt="friends"
+                />
+                <span id="item-title">Friends</span>
+              </li>
+            </a>
+            <a href="#">
+              <li id="sidebar-item">
+                <img
+                  id="item-icon"
+                  src="../images/fakebook/menu/marketplace.png"
+                  alt="marketplace"
+                />
+                <span id="item-title">Marketplace</span>
+              </li>
+            </a>
+            <a href="#">
+              <li id="sidebar-item">
+                <img
+                  id="item-icon"
+                  src="../images/fakebook/menu/gaming.png"
+                  alt="gaming"
+                />
+                <span id="item-title">Gaming</span>
+              </li>
+            </a>
+          </div>
+
+          <div id="sidebar-item-group">
+            <a href="#">
+              <li id="sidebar-item-head">
+                <span id="item-icon">
+                  <img
+                    id="item-icon-inside"
+                    src="../images/fakebook/groups/groups.png"
+                    alt="groups"
+                  />
+                </span>
+                <span id="item-head-title">Groups</span>
+              </li>
+            </a>
+            <a href="#">
+              <li id="sidebar-item">
+                <img
+                  class="rounded-semi"
+                  id="item-icon"
+                  src="../images/fakebook/groups/group-icon.jpg"
+                  alt="group-1"
+                />
+                <span id="item-title">Best Friends</span>
+              </li>
+            </a>
+            <a href="#">
+              <li id="sidebar-item">
+                <img
+                  class="rounded-semi"
+                  id="item-icon"
+                  src="../images/fakebook/groups/group-icon.jpg"
+                  alt="group-2"
+                />
+                <span id="item-title">Webdev NL</span>
+              </li>
+            </a>
+            <a href="#">
+              <li id="sidebar-item">
+                <img
+                  class="rounded-semi"
+                  id="item-icon"
+                  src="../images/fakebook/groups/group-icon.jpg"
+                  alt="group-3"
+                />
+                <span id="item-title">Hobbists</span>
+              </li>
+            </a>
+          </div>
+
+          <div id="sidebar-item-group">
+            <a href="#">
+              <li id="sidebar-item-head">
+                <span id="item-icon">
+                  <img
+                    id="item-icon-inside"
+                    src="../images/fakebook/shortcuts/shortcuts.png"
+                    alt="shortcuts"
+                  />
+                </span>
+                <span id="item-head-title">Shortcuts</span>
+              </li>
+            </a>
+            <a href="#">
+              <li id="sidebar-item">
+                <img
+                  class="rounded-semi"
+                  id="item-icon"
+                  src="../images/fakebook/shortcuts/angry-fish-friends.png"
+                  alt="group-1"
+                />
+                <span id="item-title">Angry Fish Friends</span>
+              </li>
+            </a>
+            <a href="#">
+              <li id="sidebar-item">
+                <img
+                  class="rounded-semi"
+                  id="item-icon"
+                  src="../images/fakebook/shortcuts/berocked-blitz.png"
+                  alt="group-1"
+                />
+                <span id="item-title">Berocked Blitz</span>
+              </li>
+            </a>
+            <a href="#">
+              <li id="sidebar-item">
+                <img
+                  class="rounded-semi"
+                  id="item-icon"
+                  src="../images/fakebook/shortcuts/vegetable-crush.png"
+                  alt="group-1"
+                />
+                <span id="item-title">Vegetable Crush Saga</span>
+              </li>
+            </a>
+            <a href="#">
+              <li id="sidebar-item">
+                <img
+                  class="rounded-semi"
+                  id="item-icon"
+                  src="../images/fakebook/shortcuts/gelatin.io.png"
+                  alt="group-1"
+                />
+                <span id="item-title">Gelatin.io</span>
+              </li>
+            </a>
+            <a href="#">
+              <li id="sidebar-item">
+                <img
+                  class="rounded-semi"
+                  id="item-icon"
+                  src="../images/fakebook/shortcuts/cracker.png"
+                  alt="group-1"
+                />
+                <span id="item-title">Cracker Clickers</span>
+              </li>
+            </a>
+          </div>
+        </ul>
+      </aside>
+
+      <section id="main-content">
+        <div id="stories-container">
+          <article id="add-story">
+            <img src="" alt="profile-picture" id="story-cover" />
+            <div id="add-story-footer">
+              <span>➕</span>
+              <br />
+              <span>Create story</span>
+            </div>
+          </article>
+          <a href="#">
+            <article id="story">
+              <img src="" alt="story-poster" id="story-profile-picture" />
+              <img src="" alt="story" id="story-cover" />
+              <p id="story-poster">Hank Simmons</p>
+            </article>
+          </a>
+          <a href="#">
+            <article id="story">
+              <img src="" alt="story" id="story-profile-picture" />
+              <img src="" alt="story" id="story-cover" />
+              <p id="story-poster">Derek Hanks</p>
+            </article>
+          </a>
+          <a href="#">
+            <article id="story">
+              <img src="" alt="story" id="story-profile-picture" />
+              <img src="" alt="story" id="story-cover" />
+              <p id="story-poster">James Bond</p>
+            </article>
+          </a>
+          <a href="#">
+            <article id="story">
+              <img src="" alt="story" id="story-profile-picture" />
+              <img src="" alt="story" id="story-cover" />
+              <p id="story-poster">Josh Bakker</p>
+            </article>
+          </a>
+          <a href="#">
+            <article id="story">
+              <img src="" alt="story" id="story-profile-picture" />
+              <img src="" alt="story" id="story-cover" />
+              <p id="story-poster">Peter Booid</p>
+            </article>
+          </a>
+          <button id="more-stories-button">➡️</button>
+        </div>
+        <div id="new-post-container">
+          <div id="new-post-top">
+            <a href="#"><img src="" alt="profile-picture" /></a>
+            <input type="text" placeholder="What's on your mind, User?" />
+          </div>
+          <hr />
+          <div id="new-post-bottom">
+            <ul id="new-post-options">
+              <li id="new-post-option">
+                <a href="#">
+                  <img src="" alt="live-video-icon" />
+                  <span id="option-title">Live Video</span>
+                </a>
+              </li>
+              <li id="new-post-option">
+                <a href="#">
+                  <img src="" alt="photos-video-icon" />
+                  <span id="option-title">Photos/video</span>
+                </a>
+              </li>
+              <li id="new-post-option">
+                <a href="#">
+                  <img src="" alt="feeling-activity-icon" />
+                  <span id="option-title">Feeling/activity</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="room-container">
+          <button id="rounded-btn" aria-label="create-room-button">
+            📷 Create room
+          </button>
+          <a href="#">
+            <li id="online-person">
+              <img src="" alt="online-person-picure" id="online-person-image" />
+            </li>
+          </a>
+          <a href="#">
+            <li id="online-person">
+              <img src="" alt="online-person-picure" id="online-person-image" />
+            </li>
+          </a>
+          <a href="#">
+            <li id="online-person">
+              <img src="" alt="online-person-picure" id="online-person-image" />
+            </li>
+          </a>
+        </div>
+        <div id="posts-container">
+          <article id="post">
+            <div id="post-header">
+              <a href="#"><img src="" alt="post-profile-picture" /></a>
+              <div id="post-author-date">
+                <a href="#"><h3 id="post-author">Josh peters</h3></a>
+                <a href="#" id="post-date">July 30</a
+                ><span id="post-visibility">🌍</span>
+              </div>
+              <button id="post-options" aria-label="post-options">⚙️</button>
+            </div>
+            <div id="post-content">
+              <img src="" alt="post-image" id="post-content-image" />
+            </div>
+            <div id="post-stats">
+              <div id="reaction-items">
+                <span id="reaction-item">😆</span>
+                <span id="reaction-item">👍🏾</span>
+                <a href="#"><span id="reaction-count">2K</span></a>
+              </div>
+              <div id="interaction-items">
+                <a href="#"><span id="comment-stats">43K Comments</span></a>
+                <a href="#"><span id="share-stats">156 Shares</span></a>
+              </div>
+            </div>
+            <div id="post-interaction">
+              <ul id="post-interactions">
+                <li id="post-button">
+                  <span id="post-button-icon">👍🏾</span
+                  ><span id="post-button-text">Like</span>
+                </li>
+                <li id="post-button">
+                  <span id="post-button-icon">💬</span
+                  ><span id="post-button-text">Comment</span>
+                </li>
+                <li id="post-button">
+                  <span id="post-button-icon">📭</span
+                  ><span id="post-button-text">Share</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <aside id="right-sidebar">
+        <ul id="right-sidebar-items">
+          <div id="sidebar-item-group">
+            <li id="sidebar-head-title">
+              <h3 id="item-head-title">Sponsored</h3>
+            </li>
+            <li id="sidebar-ad-item">
+              <img src="" alt="ad-image" id="sidebar-ad-image" />
+              <span id="sidebar-ad-title">Ns</span>
+              <span id="sidebar-ad-title">werkenbijns.nl</span>
+            </li>
+            <li id="sidebar-ad-item">
+              <img src="" alt="ad-image" id="sidebar-ad-image" />
+              <span id="sidebar-ad-title">Ns</span>
+              <span id="sidebar-ad-title">werkenbijns.nl</span>
+            </li>
+          </div>
+
+          <div id="sidebar-item-group">
+            <li id="sidebar-head-title">
+              <h3 id="item-head-title">Contacts</h3>
+            </li>
+            <a href="#">
+              <li id="sidebar-item">
+                <img
+                  id="item-icon"
+                  src="../images/fakebook/profile.png"
+                  class="rounded-full"
+                  alt="profile"
+                />
+                <span id="item-title">John Doe</span>
+              </li>
+            </a>
+            <a href="#">
+              <li id="sidebar-item">
+                <img
+                  id="item-icon"
+                  src="../images/fakebook/profile.png"
+                  class="rounded-full"
+                  alt="profile"
+                />
+                <span id="item-title">Hanna Baker</span>
+              </li>
+            </a>
+            <a href="#">
+              <li id="sidebar-item">
+                <img
+                  id="item-icon"
+                  src="../images/fakebook/profile.png"
+                  class="rounded-full"
+                  alt="profile"
+                />
+                <span id="item-title">Sara Cho</span>
+              </li>
+            </a>
+            <a href="#">
+              <li id="sidebar-item">
+                <img
+                  id="item-icon"
+                  src="../images/fakebook/profile.png"
+                  class="rounded-full"
+                  alt="profile"
+                />
+                <span id="item-title">Josh Peters</span>
+              </li>
+            </a>
+            <a href="#">
+              <li id="sidebar-item">
+                <img
+                  id="item-icon"
+                  src="../images/fakebook/profile.png"
+                  class="rounded-full"
+                  alt="profile"
+                />
+                <span id="item-title">Derek Thomason</span>
+              </li>
+            </a>
+          </div>
+
+          <div id="sidebar-item-group">
+            <li id="sidebar-head-title">
+              <h3 id="item-head-title">Group conversations</h3>
+            </li>
+            <a href="#"
+              ><li id="sidebar-item">
+                <span class="item-icon">🤼</span
+                ><span id="item-title">Quin, James and 12 others</span>
+              </li>
+            </a>
+            <a href="#"
+              ><li id="sidebar-item">
+                <span class="item-icon">🤼</span
+                ><span id="item-title">Hanna, Josh and 29 others</span>
+              </li>
+            </a>
+            <a href="#"
+              ><li id="sidebar-item">
+                <span class="item-icon">🤼</span
+                ><span id="item-title">Sara and Peter</span>
+              </li>
+            </a>
+            <a href="#"
+              ><li id="sidebar-item">
+                <span class="item-icon">➕</span
+                ><span id="item-title">Create new group</span>
+              </li>
+            </a>
+          </div>
+        </ul>
+      </aside>
+    </div>
+    <footer>
+      <div id="footer-links">
+        <a href="#" id="footer-link">Privacy</a>
+        <span id="footer-link-spacer">·</span>
+        <a href="#" id="footer-link">Terms</a>
+        <span id="footer-link-spacer">·</span>
+        <a href="#" id="footer-link">Advertising</a>
+        <span id="footer-link-spacer">·</span>
+        <a href="#" id="footer-link">Ads</a>
+        <span id="footer-link-spacer">·</span>
+        <a href="#" id="footer-link">Cookies</a>
+        <span id="footer-link-spacer">·</span>
+        <a href="#" id="footer-link">More</a>
+        <span id="footer-link-spacer">·</span>
+        <span id="footer-copyright"
+          >Beta &copy; <span id="copyright"></span
+        ></span>
+      </div>
+
+      <button id="rounded-btn" aria-label="new-message">✏️</button>
+    </footer>
+  </body>
 </html>
