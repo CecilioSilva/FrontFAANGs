@@ -82,6 +82,11 @@ a {
     height: 20px;
 }
 
+#sidebar-item > #item-group-icon {
+    width: 30px;
+    height: 30px;
+}
+
 .selected {
     position: absolute;
     left: -26px;
@@ -324,10 +329,10 @@ a {
 /* Right sidebar */
 #right-sidebar {
     position: fixed;
-    width: 190px;
+    width: 360px;
     right: 0px;
     top: 50px;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 ul#right-sidebar {
@@ -335,8 +340,9 @@ ul#right-sidebar {
     margin: 0;
 }
 
-#right-sidebar #sidebar-item{
+#right-sidebar #sidebar-item {
     margin-left: 0px;
+    padding-left: 3px;
     width: 100%;
     font-size: 14px;
 }
@@ -345,10 +351,99 @@ ul#right-sidebar {
     list-style: none;
 }
 
-@media screen and (max-width: 560px) {
-    #right-sidebar{
+#right-sidebar #item-head-title {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 950px) {
+    #right-sidebar {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #right-sidebar {
         display: none;
     }
+}
+
+#sidebar-ad-item {
+    display: block;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+
+#sidebar-ad-item:hover {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+#sidebar-ad-image {
+    width: 50%;
+    height: 50%;
+    max-height: 130px;
+    max-width: 130px;
+    margin-right: 10px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: top;
+}
+
+#sidebar-ad-title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#sidebar-ad-link {
+    font-size: 13px;
+    color: var(--secondary-text);
+}
+
+#sidebar-ad-text {
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+}
+
+#sidebar-ad-more {
+    display: none;
+    position: relative;
+    top: -45px;
+    right: -70px;
+}
+
+#sidebar-ad-more button {
+    background-color: var(--secondary-color);
+    box-shadow: 0px 0px 5px var(--nav-bar-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sidebar-ad-more img {
+    width: 24px;
+    height: 24px;
+    padding: 2px;
+}
+
+#sidebar-ad-item:hover #sidebar-ad-more {
+    display: block;
+}
+
+#right-sidebar #sidebar-item #rounded-btn {
+    margin-right: 10px;
+    background-color: var(--secondary-color-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+}
+
+#add-group-img {
+    width: 15px;
+    height: 15px;
 }
 
 /* Stories */
