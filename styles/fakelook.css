@@ -492,3 +492,20 @@ footer {
         display: none;
     }
 }
+
+#new-post-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+#new-post-button #rounded-btn {
+    width: 48px;
+    height: 48px;
+    background-color: var(--secondary-color-light);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.308);
+}
+
+#new-post-button #rounded-btn:hover {
+    filter: brightness(1.3);
+}
