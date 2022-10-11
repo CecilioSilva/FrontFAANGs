@@ -1,0 +1,151 @@
+:root {
+  --fg-color: #ffffff;
+  --bg-color: #080808;
+  --accent-color: #e63946;
+  --primary-font: "Titillium Web", sans-serif;
+  --secondary-font: "Exo", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 10px;
+  font-family: var(--secondary-font);
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--fg-color);
+}
+
+ul,
+li {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+/* Navigation */
+#nav-items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#nav-logo > #logo {
+  font-size: 3.125rem;
+  line-height: 4.125rem;
+  font-weight: 600;
+  margin: 0;
+  margin-right: 30px;
+  width: min-content;
+}
+
+#nav-links a {
+  text-decoration: none;
+}
+
+#nav-links {
+  display: flex;
+}
+
+#nav-link {
+  color: var(--fg-color);
+  opacity: 0.65;
+  display: inline;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+#nav-divider {
+  display: none;
+  width: 100%;
+  height: 1px;
+  opacity: 0.1;
+}
+
+@media screen and (max-width: 770px) {
+  #nav-divider {
+    display: block;
+  }
+  #nav-items {
+    flex-direction: column;
+  }
+}
+
+#nav-bar {
+  margin-bottom: 10vh;
+}
+
+/* Hero */
+section#hero-section {
+  margin-bottom: 2vh;
+  text-align: center;
+  font-family: var(--primary-font);
+}
+
+h2#hero-title {
+  margin: 0;
+  font-weight: 300;
+  font-size: 2.25rem;
+}
+
+#hero-description {
+  margin: 4px;
+  font-weight: 300;
+  font-size: 1rem;
+  opacity: 70%;
+  margin: auto;
+  max-width: 700px;
+}
+
+/* Cards */
+
+#page-cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#page-card {
+  position: relative;
+  width: 422px;
+  font-family: var(--primary-font);
+  margin: 30px;
+}
+
+#page-card #page-card-image {
+  height: 302px;
+  width: 100%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+#page-card-title {
+  font-weight: 400;
+  margin: 0px;
+  line-height: 24px;
+  font-size: 1.3rem;
+}
+
+#page-description {
+  font-weight: 300;
+  line-height: 20px;
+  margin: 0px;
+}
+
+#card-hover-icon {
+  display: none;
+}
