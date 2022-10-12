@@ -1,85 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./styles/global.css" />
-        <link rel="stylesheet" href="./styles/index.css" />
-        <script src="./javascript/index.js" defer></script>
-        <script src="./javascript/home.js" defer></script>
-        <title>FrontFaangs</title>
-    </head>
-    <body>
-        <header>
-            <nav id="nav-bar">
-                <ul id="nav-items">
-                    <li id="nav-item"><a id="nav-link" href="./pages/fakelook.html">Fakelook</a></li>
-                    <li id="nav-item"><a id="nav-link" href="./pages/googolplex.html">Googolplex</a></li>
-                    <li id="nav-item"><a id="nav-link" href="./pages/netflux.html">Netflux</a></li>
-                    <li id="nav-item"><a id="nav-link" href="./pages/nile.html">Nile</a></li>
-                    <li id="nav-item"><a id="nav-link" href="./pages/pear.html">Pear</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <section id="hero-section">
-            <h1 class="hero-title">FrontFaangs</h1>
-            <p class="hero-description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quia iusto neque cupiditate non in
-                architecto dolorem! Repellat nam numquam, quisquam explicabo nisi eligendi doloribus, nobis accusantium
-                reprehenderit temporibus sapiente magni minima odit! Et, maxime voluptatem in accusamus tempore vitae
-                reiciendis hic debitis amet vero, ad est ipsam corporis aperiam. Cupiditate ipsa perferendis, explicabo
-                ducimus rem quas vel sint at. Molestias repudiandae facilis aspernatur?
-            </p>
-        </section>
-
-        <section id="page-cards-section">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="./javascript/index.js" defer></script>
+    <script src="./javascript/home.js" defer></script>
+    <title>FrontFAANGs</title>
+  </head>
+  <body>
+    <header>
+      <nav id="nav-bar">
+        <ul id="nav-items">
+          <div id="nav-logo">
+            <h1 id="logo">FrontFAANGs</h1>
+          </div>
+          <hr id="nav-divider" />
+          <ul id="nav-links">
             <a href="./pages/fakelook.html">
-                <article id="page-card">
-                    <h2 id="page-card-title">fakelook</h2>
-                    <img src="" alt="" id="page-card-image" />
-                </article>
+              <li id="nav-link">Fakelook</li>
             </a>
             <a href="./pages/googolplex.html">
-                <article id="page-card">
-                    <h2 id="page-card-title">googolplex</h2>
-                    <img src="" alt="" id="page-card-image" />
-                </article>
+              <li id="nav-link">Googolplex</li>
             </a>
             <a href="./pages/netflux.html">
-                <article id="page-card">
-                    <h2 id="page-card-title">netflux</h2>
-                    <img src="" alt="" id="page-card-image" />
-                </article>
+              <li id="nav-link">Netflux</li>
             </a>
             <a href="./pages/nile.html">
-                <article id="page-card">
-                    <h2 id="page-card-title">nile</h2>
-                    <img src="" alt="" id="page-card-image" />
-                </article>
+              <li id="nav-link">Nile</li>
             </a>
             <a href="./pages/pear.html">
-                <article id="page-card">
-                    <h2 id="page-card-title">pear</h2>
-                    <img src="" alt="" id="page-card-image" />
-                </article>
+              <li id="nav-link">Pear</li>
             </a>
-        </section>
+          </ul>
+        </ul>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
+        </div>
+      </nav>
+    </header>
 
-        <footer>
-            <ul id="footer-links">
-                <li id="footer-link"><a href="https://github.com/CecilioSilva">Github</a></li>
-                <li id="footer-link">
-                    <a href="https://www.linkedin.com/in/cecilio-silva-monteiro-24b3b719b/">LinkedIn</a>
-                </li>
-                <li id="footer-link"><a href="https://www.ceciliosilva.me/">Portfolio</a></li>
-                <li id="footer-link"><a href="https://www.ceciliosilva.me/blog">Blog</a></li>
-            </ul>
-            <p id="footer-copyright">
-                Cecilio Silva Monteiro &copy; <span id="copyright"></span> - Logo's and Brands used are not affilated in
-                any way
-            </p>
-        </footer>
-    </body>
+    <section id="hero-section">
+      <h2 id="hero-title">Lorem Ipsum dolor sit amet</h2>
+      <p id="hero-description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+        quia iusto neque cupiditate non in architecto dolorem! Repellat nam
+        numquam, quisquam explicabo nisi eligendi doloribus, nobis accusantium
+        reprehenderit temporibus sapiente magni minima odit! Et, maxime
+        voluptatem in accusamus tempore vitae reiciendis hic debitis amet vero,
+        ad est ipsam corporis aperiam. Cupiditate ipsa perferendis, explicabo
+        ducimus rem quas vel sint at. Molestias repudiandae facilis aspernatur?
+      </p>
+    </section>
+
+    <section id="page-cards-section">
+      <article id="page-card">
+        <a id="page-card-link" href="./pages/fakelook.html">
+          <img
+            src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            id="page-card-image"
+          />
+          <div id="card-hover-icon">
+            <img
+              src="./images/homepage/up-arrow.svg"
+              alt="hover icon"
+              id="hover-icon"
+            />
+          </div>
+        </a>
+        <h3 id="page-card-title">fakelook</h3>
+        <p id="page-description">Lorem ipsum dolor</p>
+      </article>
+      <article id="page-card">
+        <a id="page-card-link" href="./pages/googolplex.html">
+          <img
+            src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            id="page-card-image"
+          />
+          <div id="card-hover-icon">
+            <img
+              src="./images/homepage/up-arrow.svg"
+              alt="hover icon"
+              id="hover-icon"
+            />
+          </div>
+        </a>
+        <h3 id="page-card-title">googolplex</h3>
+        <p id="page-description">Lorem ipsum dolor</p>
+      </article>
+      <article id="page-card">
+        <a id="page-card-link" href="./pages/netflux.html">
+          <img
+            src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            id="page-card-image"
+          />
+          <div id="card-hover-icon">
+            <img
+              src="./images/homepage/up-arrow.svg"
+              alt="hover icon"
+              id="hover-icon"
+            />
+          </div>
+        </a>
+        <h3 id="page-card-title">netflux</h3>
+        <p id="page-description">Lorem ipsum dolor</p>
+      </article>
+      <article id="page-card">
+        <a id="page-card-link" href="./pages/nile.html">
+          <img
+            src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            id="page-card-image"
+          />
+          <div id="card-hover-icon">
+            <img
+              src="./images/homepage/up-arrow.svg"
+              alt="hover icon"
+              id="hover-icon"
+            />
+          </div>
+        </a>
+        <h3 id="page-card-title">nile</h3>
+        <p id="page-description">Lorem ipsum dolor</p>
+      </article>
+      <article id="page-card">
+        <a id="page-card-link" href="./pages/pear.html">
+          <img
+            src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            id="page-card-image"
+          />
+          <div id="card-hover-icon">
+            <img
+              src="./images/homepage/up-arrow.svg"
+              alt="hover icon"
+              id="hover-icon"
+            />
+          </div>
+        </a>
+        <h3 id="page-card-title">pear</h3>
+        <p id="page-description">Lorem ipsum dolor</p>
+      </article>
+    </section>
+
+    <footer>
+      <ul id="footer-links">
+        <li id="footer-link">
+          <a href="https://github.com/CecilioSilva">
+            <img
+              src="./images/homepage/github.svg"
+              alt="github"
+              id="footer-icon"
+            />
+          </a>
+        </li>
+        <li id="footer-link">
+          <a
+            href="https://www.linkedin.com/in/cecilio-silva-monteiro-24b3b719b/"
+          >
+            <img
+              src="./images/homepage/linkedin.svg"
+              alt="linkedin"
+              id="footer-icon"
+            />
+          </a>
+        </li>
+        <li id="footer-link">
+          <a href="https://www.ceciliosilva.me/">
+            <img
+              src="./images/homepage/portfolio.svg"
+              alt="portfolio"
+              id="footer-icon"
+            />
+          </a>
+        </li>
+        <li id="footer-link">
+          <a href="https://www.ceciliosilva.me/blog">
+            <img src="./images/homepage/blog.png" alt="blog" id="footer-icon" />
+          </a>
+        </li>
+      </ul>
+      <a id="footer-copyright" href="https://www.github.com/CecilioSilva">
+        &copy;<span id="copyright"></span> Cecilio Silva Monteiro
+      </a>
+    </footer>
+  </body>
 </html>
