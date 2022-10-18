@@ -775,9 +775,90 @@ ul#right-sidebar {
 /* #endregion */
 
 /* #region Posts */
-#posts-container {
-    display: none;
+
+#post {
+    background-color: var(--nav-bar-background);
+    width: 60vw;
+    max-width: 620px;
+
+    border-radius: 10px;
+    box-shadow: 0 1px 2px var(--shadow-color);
+    margin-bottom: 25px;
 }
+
+#post-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#post-personal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#post-author {
+    color: var(--primary-text);
+    font-size: 15px;
+}
+
+#post-author-date a {
+    font-size: 13px;
+    color: var(--secondary-text);
+}
+
+#post-author:hover {
+    text-decoration: underline;
+}
+
+#post-profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+#post-visibility img {
+    width: 13px;
+    height: 13px;
+}
+
+#date-visib {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#post-date {
+    margin-right: 5px;
+}
+
+#post-options {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+}
+
+#post-options:hover {
+    background-color: var(--secondary-color);
+}
+
+#post-options img {
+    width: 20px;
+    height: 20px;
+    filter: opacity(0.4) drop-shadow(0 0 0 var(--secondary-text));
+}
+
+#post-content img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
 /* #endregion */
 
 /* #region Footer */
