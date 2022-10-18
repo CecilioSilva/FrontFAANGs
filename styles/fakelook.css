@@ -10,12 +10,14 @@
     --accent-color: #ff930f;
     --accent-color-light: #fff95b;
     --filter-primary-icon: invert(89%) sepia(6%) hue-rotate(185deg);
+    --shadow-color: rgba(0, 0, 0, 0.264);
 }
 
 html {
     font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
     background-color: var(--bg-color);
     color: var(--primary-text);
+    min-width: 600px;
 }
 
 html,
@@ -204,32 +206,49 @@ a {
     filter: brightness(1.1);
 }
 
+#search-box {
+    display: flex;
+    background-color: var(--secondary-color);
+    color: var(--secondary-text);
+    font-weight: 500;
+    font-size: 20px;
+    padding: 0px 10px;
+    border-radius: 25px;
+    max-width: 600px;
+    width: 50vw;
+    justify-content: start;
+}
+
+#search-input {
+    display: block;
+    background-color: inherit;
+    border: none;
+    margin-left: 5px;
+    color: var(--primary-text);
+    font-size: 0.9375rem;
+    width: 100%;
+    border-radius: 0px 25px 25px 0px;
+    outline: none;
+}
+
+#search-box-small {
+    display: flex;
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+}
+
+#search-box-small:hover {
+    cursor: pointer;
+    background-color: var(--secondary-color-light);
+}
+
 @media screen and (min-width: 560px) {
-    #search-input {
-        display: block;
-        background-color: inherit;
-        border: none;
-        margin-left: 5px;
-        color: var(--primary-text);
-        font-size: 0.9375rem;
-        width: 100%;
-        border-radius: 0px 25px 25px 0px;
-        outline: none;
-    }
-
-    #search-box {
-        display: flex;
-        background-color: var(--secondary-color);
-        color: var(--secondary-text);
-        font-weight: 500;
-        font-size: 20px;
-        padding: 0px 10px;
-        border-radius: 25px;
-        max-width: 600px;
-        width: 50vw;
-        justify-content: start;
-    }
-
     #search-box-small {
         display: none;
     }
@@ -238,23 +257,6 @@ a {
 @media screen and (max-width: 560px) {
     #search-box {
         display: none;
-    }
-
-    #search-box-small {
-        display: flex;
-        margin-left: 20px;
-        width: 40px;
-        height: 40px;
-        justify-content: center;
-        align-items: center;
-        border: none;
-        border-radius: 50%;
-        background-color: var(--secondary-color);
-    }
-
-    #search-box-small:hover {
-        cursor: pointer;
-        background-color: var(--secondary-color-light);
     }
 }
 
@@ -470,7 +472,6 @@ ul#right-sidebar {
 /* #region Main Content */
 
 #main-content {
-    background-color: #8a759c;
     width: 60%;
     overflow: hidden;
     display: flex;
@@ -478,6 +479,8 @@ ul#right-sidebar {
     margin-right: 20%;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    padding-bottom: 20px;
 }
 
 @media screen and (max-width: 1140px) {
@@ -513,6 +516,7 @@ ul#right-sidebar {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 1px 2px var(--shadow-color);
 }
 
 @media screen and (max-width: 950px) {
@@ -639,8 +643,73 @@ ul#right-sidebar {
 
 /* #region New Post */
 #new-post-container {
-    display: none;
+    background-color: var(--nav-bar-background);
+    width: 60vw;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px var(--shadow-color);
 }
+
+#new-post-container hr {
+    border: none;
+    border-bottom: 0.15rem solid var(--secondary-color-light);
+}
+
+#new-post-top {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#new-post-top a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+#new-post-top #search-icon {
+    opacity: 0;
+}
+
+@media screen and (max-width: 560px) {
+    #new-post-top #search-box {
+        display: block;
+    }
+}
+
+#new-post-option {
+    list-style: none;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+
+#new-post-option a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-text);
+}
+
+#new-post-bottom li img {
+    width: 24px;
+    height: 24px;
+    padding-right: 10px;
+}
+
+#new-post-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#new-post-option:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
 /* #endregion */
 
 /* #region Room */
