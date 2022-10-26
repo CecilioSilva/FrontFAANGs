@@ -1,0 +1,25 @@
+#front-faangs-header {
+    position: sticky;
+    top: 0;
+    height: 30px;
+    background: #d62828;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#front-faangs-header a {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+#front-faangs-header a:hover {
+    text-decoration: underline;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}

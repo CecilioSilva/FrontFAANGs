@@ -299,7 +299,7 @@ a {
 #left-sidebar {
     width: 20%;
     position: fixed;
-    top: 80px;
+    top: 100px;
 }
 
 @media screen and (min-width: 1140px) {
